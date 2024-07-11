@@ -12,6 +12,7 @@ import ParallaxSection from '@/components/ParallaxSection';
 import PurchaseParallax from '@/components/PurchaseParallax';
 import CourseContent from '@/components/CourseContent';
 import MyStory from '@/components/MyStory';
+import VideosSection from '@/components/VideosSection';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <AboutUs />
+      <VideosSection />
       <CourseContent />
       <ParallaxSection />
       <Services />
