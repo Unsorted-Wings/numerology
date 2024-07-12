@@ -40,7 +40,7 @@ html {
 }
 
 .parallax {
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/hero.webp'); /* Replace with your image URL */
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/hero.jpg'); /* Replace with your image URL */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

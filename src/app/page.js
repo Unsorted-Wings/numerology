@@ -24,7 +24,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <AboutUs />
-      <VideosSection />
+      {/* <VideosSection /> */}
       <CourseContent />
       <ParallaxSection />
       <Services />

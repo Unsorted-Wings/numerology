@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FiPhone } from 'react-icons/fi';
+import { FiShoppingCart } from 'react-icons/fi';
 
 export default function NavBar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -195,6 +196,18 @@ export default function NavBar() {
               href='/'
             >
               Contact <FiPhone size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className='hidden lg:flex fixed flex-col top-[50%] right-0'>
+        <ul>
+          <li className='z-20 w-[100px] h-[60px] flex justify-between items-center  bg-[#FFD700] hover:bg-[#ffd90083]'>
+            <a
+              className='flex justify-between text-sm items-center px-6 py-4 w-full text-[#026d02]'
+              href='/purchase'
+            >
+              Purchase Now
             </a>
           </li>
         </ul>

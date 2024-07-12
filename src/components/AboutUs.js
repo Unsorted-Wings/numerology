@@ -22,7 +22,7 @@ export default function AboutUs() {
       initial={{ opacity: 0, y: 20 }}
       animate={animateSection ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 1 }}
-      id="about" className="bg-green-200 text-black py-20 px-20 text-justify"
+      id="about" className="bg-[#026d02] text-white py-20 px-20 text-justify"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
         <motion.div

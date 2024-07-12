@@ -20,7 +20,7 @@ const ContactUs = () => {
     <section
       ref={ref}
       id="contact"
-      className="bg-green-200 text-black py-20"
+      className="bg-[#026d02] text-white py-20"
     >
       <div className="container mx-auto text-center">
         <motion.h2
@@ -35,7 +35,7 @@ const ContactUs = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={animateSection ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mt-4 text-lg text-gray-600"
+          className="mt-4 text-lg text-white"
         >
           We'd love to hear from you! Fill out the form below to get in touch.
         </motion.p>

@@ -7,7 +7,7 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }} // Animation when section is visible
       transition={{ duration: 1 }} // Animation duration
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('../images/hero.webp')" }}
+      style={{ backgroundImage: "url('../images/hero.gif')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative text-center text-white px-6 md:px-24 w-full mt-24">

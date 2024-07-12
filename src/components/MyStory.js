@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -20,12 +21,12 @@ const MyStory = () => {
     <section
       ref={ref}
       id="my-story"
-      className="py-20 bg-green-200 text-white"
+      className="py-20 bg-[#026d02] text-white"
     >
       <div className="container mx-auto px-12 lg:flex lg:items-center lg:justify-between">
         <div className="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
           <motion.img
-            src="https://via.placeholder.com/600"
+            src="../images/image.jpg"
             alt="Founder"
             className="w-full h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +39,7 @@ const MyStory = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animateSection ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-4xl font-extrabold text-[#026d02] mb-6"
+            className="text-4xl font-extrabold text-[#FFD700] mb-6"
           >
             My Story
           </motion.h2>
@@ -46,7 +47,7 @@ const MyStory = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animateSection ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.4 }}
-            className="mb-6 text-lg text-justify leading-relaxed text-[#026d02]"
+            className="mb-6 text-lg text-justify leading-relaxed text-white"
           >
             Born with a passion for numbers and a deep understanding of the cosmic vibrations,
             our founder has been a guiding light for many individuals seeking to understand their
@@ -58,7 +59,7 @@ const MyStory = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animateSection ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.6 }}
-            className="mb-6 text-lg text-justify leading-relaxed text-[#026d02]"
+            className="mb-6 text-lg text-justify leading-relaxed text-white"
           >
             Through meticulous study and practical applications, the founder has unlocked the secrets 
             of numerology, helping countless individuals find clarity and direction. Their expertise 
@@ -69,7 +70,7 @@ const MyStory = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={animateSection ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.8 }}
-            className="mb-6 text-lg text-justify leading-relaxed text-[#026d02]"
+            className="mb-6 text-lg text-justify leading-relaxed text-white"
           >
             Join us on this transformative journey and discover how the power of numbers can illuminate 
             your path and reveal your true potential.
