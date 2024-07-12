@@ -22,9 +22,24 @@ export default function AboutUs() {
       initial={{ opacity: 1}}
       animate={{ opacity: 1}}
       transition={{ duration: 1 }}
-      id="about" className="bg-[#026d02] text-white py-20 px-20 text-justify"
+      id="about" 
+      className="relative text-white py-20 px-20 text-justify"
     >
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
+      {/* Background Video */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        className="absolute inset-0 object-cover w-full h-full z-0"
+      >
+        <source src="../images/aboutus.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Black Translucent Overlay */}
+      <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
+
+      <div className="relative container mx-auto flex flex-col md:flex-row items-center justify-center z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={animateSection ? { opacity: 1, y: 0 } : {}}
