@@ -19,8 +19,8 @@ export default function AboutUs() {
   return (
     <motion.section
       ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={animateSection ? { opacity: 1, y: 0 } : {}}
+      initial={{ opacity: 1}}
+      animate={{ opacity: 1}}
       transition={{ duration: 1 }}
       id="about" className="bg-[#026d02] text-white py-20 px-20 text-justify"
     >
