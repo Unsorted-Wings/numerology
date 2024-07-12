@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaStar } from 'react-icons/fa';
-import ReactPlayer from 'react-player/youtube';
 
 const CourseContent = () => {
   const { ref, inView } = useInView({
@@ -94,25 +93,28 @@ const CourseContent = () => {
 
         {/* YouTube Videos Section */}
         <div className="mt-16">
-          <h3 className="text-3xl font-bold text-[#FFD700]">Course Videos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
-            <div className="aspect-w-16 aspect-h-9">
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=26-EjlVIoPU"
-                controls={true}
+            <div className="w-full h-80 rounded-lg overflow-hidden">
+              <iframe
                 width="100%"
                 height="100%"
-                className="w-full h-full rounded-lg"
-              />
+                src="https://www.youtube.com/embed/26-EjlVIoPU"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
-            <div className="aspect-w-16 aspect-h-9">
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=26-EjlVIoPU"
-                controls={true}
+            <div className="w-full h-80 rounded-lg overflow-hidden">
+              <iframe
                 width="100%"
                 height="100%"
-                className="w-full h-full rounded-lg"
-              />
+                src="https://www.youtube.com/embed/26-EjlVIoPU"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
